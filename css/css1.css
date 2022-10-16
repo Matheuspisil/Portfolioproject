@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap');
+body, html{
+    box-sizing: border-box;
+    background-color: rgb(105, 31, 104);
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    
+    
+}
+h1, p, a, h2{
+    font-family:Source Code Pro, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ;
+}
+h1{
+    font-size: clamp(2.4em, 1.5em + 1.5vw, 2em);
+    letter-spacing: 1px;
+}
+p{
+    letter-spacing: 3px;
+}
+p {
+  font-size: clamp(1.7em, 1em + 1vw, 1.5em);
+  }
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  overflow: hidden;
+  
+}
+
+#navbar a {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.hero{
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  overflow: auto;
+
+
+  width: 100%;
+  height: 100vh;
+  
+}
+
+
+
+  .apta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    overflow: auto;
+    position: relative;
+    
+    
+
+    width: 100%;
+    height: 100vh;
+  }
+  .apta h1{
+    margin-top: 10%;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .apta p{
+    color: white;
+    font-size: .9em;
+    text-align: left;
+    padding: 2px;
+    
+  }
+  .formation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: auto;
+
+    width: 100%;
+    height: 100vh;
+    
+    background-color: beige;
+    position: relative;
+  }
+  .formation h1{
+    margin-top: 10%;
+    position: relative;
+  }
+  .formation p{
+    font-size: 1.3em;
+  }
+  .skills{
+    display: block;
+
+    width: 100%;
+    
+
+    color: white;
+
+    overflow: hidden;
+
+  }
+  .skills h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .skills ul{
+    font-size: 2.5em;
+    margin-left:-10%;
+  }
+    ol:nth-child(odd){
+    
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  ol:nth-child(even){
+    background-color: darkblue;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .row {
+    margin: 10px -16px;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; 
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .show {
+    display: block;
+  }
+
+  .main, .btn{
+    color: white;
+  }
+  .myBtnContainer{
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  .content{
+    overflow: hidden;
+    color: white;
+    text-align: center;
+  }
+
+  footer{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    
+    background-color: beige;
+
+  }
+  footer h1{
+    text-align: center;
+    color: rgb(2, 0, 0);
+    padding: 1%;
+  }
+  footer a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+  }
+  footer ul{
+    margin-top: 33%;
+    display: flex;
+    list-style-type: none;
+  }
+  .links .ul1{
+    
+    font-size: 2em;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  .ul2 p{
+    display: flex;
+    flex-direction: column;
+    font-size: .9em;
+  }
+ 
+  @media only screen and (min-width: 600px){
+    .hero h1{
+      font-size: 3.5em;
+    }
+    .hero p{
+      font-size: 2.5em;
+    }
+    .apta h1{
+      margin-top: 0%;
+      font-size: 2.5em;
+    }
+    .apta p{
+      font-size: 1.5em;
+      padding: 5%;
+    }
+    .formation h1{
+      font-size: 4em;
+      margin-top: 0%;
+    }
+    .formation p{
+      font-size: 2.5em;
+      text-align: center;
+    }
+    .skills h1{
+      font-size: 3.5em;
+    }
+    .skills ul{
+      font-size: 3.5em;
+      margin: 50% 0;
+    }
+    footer h1{
+      font-size: 3em;
+    }
+    .links .ul1{
+      font-size: 4.5em;
+    }
+    .links .ul2{
+      font-size: 1.8em;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  @media only screen and (min-width: 1000px){
+    .hero h1{
+      font-size: 5.5em;
+    }
+    .hero p{
+      font-size: 3.5em;
+    }
+    .apta h1{
+      margin-top: 70%;
+      font-size: 4.5em;
+    }
+    .apta p{
+      font-size: 2.5em;
+      padding: 5%;
+    }
+    .formation h1{
+      font-size: 5em;
+      margin-top: 0%;
+    }
+    .formation p{
+      font-size: 2.5em;
+      text-align: center;
+    }
+    .skills h1{
+      font-size: 3.5em;
+    }
+    .skills ul{
+      font-size: 3.5em;
+      margin: 50% 0;
+      top: 0%;
+    }
+    footer{
+      background-color: beige;
+      box-sizing: border-box;
+      height: 100vh;
+    
+    }
+    footer h1{
+      font-size: 5em;
+    }
+    .links .ul1{
+      font-size: 5em;
+      margin-top: 0%;
+    }
+    .links .ul2{
+      
+      font-size: 3em;
+      font-weight: bold;
+    }
+    .links .ul2 p{
+      margin-top: -40%;
+      margin-left: 30%;
+    }
+  }
